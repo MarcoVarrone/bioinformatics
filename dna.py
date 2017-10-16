@@ -1,13 +1,13 @@
-from nucleotide.bases.base import Base
-from sequence_factory import SequenceFactory
+from sequence import Sequence
 
 
-class DNA:
+class DNA(Sequence):
     def __init__(self, sequence):
-        if all(isinstance(element, Base) for element in sequence):
-            self.sequence = sequence
-        elif isinstance(sequence, str):
-            self.sequence = SequenceFactory.create_dna(sequence)
+        allowed_bases = ['A', 'C', 'G', 'T']
+        if all(x in allowed_bases for x in sequence):
+            super(DNA, self).__init__(sequence)
+        else:
+            raise ValueError('DNA: the sequence is not allowed.')
 
     def __str__(self):
         representation = ''
