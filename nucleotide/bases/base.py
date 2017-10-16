@@ -7,3 +7,6 @@ class Base(object):
 
     def __add__(self, other):
         return sequence.Sequence(self.symbol + other.symbol)
+
+    def __repr__(self):
+        return self.symbol

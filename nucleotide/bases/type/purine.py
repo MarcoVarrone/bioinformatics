@@ -2,4 +2,5 @@ from nucleotide.bases.base import Base
 
 
 class Purine(Base):
-    pass
+    def __init__(self, symbol):
+        super(Purine, self).__init__(symbol)

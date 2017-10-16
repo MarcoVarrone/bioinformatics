@@ -7,7 +7,7 @@ class DNA(Sequence):
         if all(x in allowed_bases for x in sequence):
             super(DNA, self).__init__(sequence)
         else:
-            raise ValueError('DNA: the sequence is not allowed.')
+            raise ValueError('The sequence is not allowed.')
 
     def __str__(self):
         representation = ''
