@@ -1,4 +1,4 @@
-from nucleotide.bases.type.pyrimidine import Pyrimidine
+from nucleic.type.pyrimidine import Pyrimidine
 
 
 class Uracil(Pyrimidine):

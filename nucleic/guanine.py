@@ -1,4 +1,4 @@
-from nucleotide.bases.type.purine import Purine
+from nucleic.type.purine import Purine
 
 
 class Guanine(Purine):

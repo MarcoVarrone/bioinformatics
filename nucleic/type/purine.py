@@ -1,4 +1,4 @@
-from nucleotide.bases.base import Base
+from nucleic.base import Base
 
 
 class Purine(Base):

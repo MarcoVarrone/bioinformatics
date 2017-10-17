@@ -1,1 +1,0 @@
-__all__ = ["adenine", "cytosine", "guanine", "thymine", "uracil", "base"]

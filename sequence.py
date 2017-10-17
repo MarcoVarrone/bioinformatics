@@ -1,4 +1,4 @@
-from nucleotide.bases.base import Base
+from nucleic.base import Base
 
 
 def str_to_sequence(string, alphabet):
@@ -6,7 +6,7 @@ def str_to_sequence(string, alphabet):
     for element in string:
         try:
             sequence.append(alphabet[element]())
-        except NameError:
+        except KeyError:
             raise ValueError('The sequence is not valid')
     return sequence
 
