@@ -2,5 +2,5 @@ class Base:
     def __init__(self, symbol):
         self.symbol = symbol
 
-    def __repr__(self):
+    def __str__(self):
         return self.symbol
